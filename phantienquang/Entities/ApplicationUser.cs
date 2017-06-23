@@ -35,7 +35,7 @@ namespace phantienquang.Entities
 
     public class ApplicationUser : IdentityUser<int, CustomUserLogin, CustomUserRole, CustomUserClaim>
     {
-        public List<Post> Posts { get; set; } = new List<Post>();
+        public List<Post> Posts { get; set; }// = new List<Post>();
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser, int> manager)
         {
